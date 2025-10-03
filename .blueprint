@@ -1,12 +1,12 @@
 created:
     - app/Http/Controllers/Auth/ProfileController.php
     - database/factories/UserFactory.php
-    - database/migrations/2025_10_02_231905_create_users_table.php
+    - database/migrations/2025_10_02_233729_create_users_table.php
     - app/Models/User.php
     - tests/Feature/Http/Controllers/Auth/ProfileControllerTest.php
-    - app/Http/Requests/Auth/ProfileUpdateRequest.php
-    - resources/views/auth/profile/edit.blade.php
 updated:
     - routes/web.php
+skipped:
+    - resources/views/auth/profile/edit.blade.php
 models:
     User: { name: string, email: 'string unique', phone_whatsapp: 'string nullable', avatar_path: 'string nullable', role: 'enum:cliente,profissional default:cliente', email_verified_at: 'timestamp nullable', password: string, remember_token: 'string nullable', timestamps: timestamps }
